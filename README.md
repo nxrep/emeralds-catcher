@@ -1,4 +1,4 @@
-# Emeralds Run
+# Emeralds Catcher VR
 
 Catch as many emeralds as you can and avoid the bombs!
 
