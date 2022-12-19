@@ -2,31 +2,21 @@ import { Loader } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { VRButton, XR } from '@react-three/xr';
 import { Suspense } from 'react';
+import { styles } from 'AppStyles';
 import EmeraldsCatcher from './EmeraldsCatcher';
-
-const styles = {
-  VRButton: {
-    color: 'black',
-    background: 'white',
-    border: '2px solid black',
-    borderRadius: '4px',
-    position: 'absolute',
-    bottom: '30px',
-    left: '50%',
-    transform: 'translateX(-50%)',
-    padding: '14px 26px',
-    font: '1rem sans-serif',
-    outline: 'none',
-    zIndex: '99999',
-    cursor: 'pointer',
-  } as React.CSSProperties,
-};
 
 function App() {
   return (
     <>
       <Suspense fallback={null}>
-        <VRButton style={styles.VRButton} />
+        <div style={styles.Instructions}>
+          There are two easy ways to play the game in Virtual Reality:
+          <br />
+          1️⃣ visit emeralds.nxdec.io in the Meta Quest browser
+          <br />
+          2️⃣ use Chrome or Edge, connect your headset and press Enter VR
+        </div>
+        <VRButton style={styles.VRButton} onClick={() => console.log('clicked me!')} />
         <Canvas>
           <XR>
             <EmeraldsCatcher />
