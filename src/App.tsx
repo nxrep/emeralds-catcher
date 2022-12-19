@@ -10,7 +10,7 @@ function App() {
     <>
       <Suspense fallback={null}>
         <div style={styles.Instructions}>
-          There are two easy ways to play the game in Virtual Reality:
+          There are two ways to play the game in Virtual Reality:
           <br />
           1️⃣ visit emeralds.nxdec.io in the Meta Quest browser
           <br />
