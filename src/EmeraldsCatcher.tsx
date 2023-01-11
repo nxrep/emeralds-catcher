@@ -1,4 +1,3 @@
-import { OrbitControls } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import { Controllers, Interactive, useXR } from '@react-three/xr';
 import { useEffect, useRef, useState } from 'react';
@@ -67,7 +66,7 @@ const EmeraldsCatcher = (): React.ReactElement => {
     groupPlayfieldRef.current.position.z += trackSpeed * delta;
 
     // check if player reached the end
-    if (groupPlayfieldRef.current.position.z > 566) {
+    if (groupPlayfieldRef.current.position.z > 476) {
       playCoinFX();
       setScore(score + 25);
       setGameState('finished');
@@ -97,7 +96,7 @@ const EmeraldsCatcher = (): React.ReactElement => {
           switch (playfieldItems[i].model) {
             case 'EMERALD':
               playCoinFX();
-              setTrackSpeed(trackSpeed + 0.16);
+              setTrackSpeed(trackSpeed + 0.18);
               setScore(score + 10);
               break;
             case 'BOMB':
@@ -117,7 +116,6 @@ const EmeraldsCatcher = (): React.ReactElement => {
 
   return (
     <>
-      <OrbitControls />
       <Controllers />
       <Sky />
 
