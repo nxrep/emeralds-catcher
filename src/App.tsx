@@ -24,7 +24,7 @@ function App() {
               <br />
               2️⃣ use Chrome or Edge, connect your headset and press Enter VR
             </div>
-            <VRButton style={styles.VRButton} onClick={() => console.log('clicked me!')} />
+            <VRButton style={styles.VRButton} />
             <Canvas>
               <XR>
                 <EmeraldsCatcher />

@@ -14,7 +14,7 @@ import { StartButton } from './models/StartButton';
 import { RestartButton } from './models/RestartButton';
 import { GameState, Item } from './types';
 
-const STARTSPEED = 1.4;
+const STARTSPEED = 1.5;
 const STARTLIVES = 3;
 
 const EmeraldsCatcher = (): React.ReactElement => {
@@ -66,7 +66,7 @@ const EmeraldsCatcher = (): React.ReactElement => {
     groupPlayfieldRef.current.position.z += trackSpeed * delta;
 
     // check if player reached the end
-    if (groupPlayfieldRef.current.position.z > 476) {
+    if (groupPlayfieldRef.current.position.z > 506) {
       playCoinFX();
       setScore(score + 25);
       setGameState('finished');
@@ -96,7 +96,7 @@ const EmeraldsCatcher = (): React.ReactElement => {
           switch (playfieldItems[i].model) {
             case 'EMERALD':
               playCoinFX();
-              setTrackSpeed(trackSpeed + 0.18);
+              setTrackSpeed(trackSpeed + 0.2);
               setScore(score + 10);
               break;
             case 'BOMB':

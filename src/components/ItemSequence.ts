@@ -1,6 +1,6 @@
 import { Item } from '../types';
 
-const DISTANCE = 470;
+const DISTANCE = 500;
 const MODEL = ['EMERALD', 'BOMB', 'EMPTY'];
 
 export const generateItemSequence = () => {
