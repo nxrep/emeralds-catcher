@@ -13,3 +13,7 @@ Click on the start button and move left or right using the thumbstick.
 ## install
 
 Download the repo and run `npm install` and then `npm start`.
+
+## Screenshot
+
+![game screenshot](/EmeraldsCatcher-screenshot.jpg "game screenshot")
